@@ -25,11 +25,15 @@ nav ul {
     align-items: center;
     margin: 0;
     padding: 0;
+    height: 3em;
+    width: 55%;
 }
 
 nav li {
     list-style-type: none;
     padding: 5%;
+    text-align: center;
+    white-space: nowrap;
 }
 
 nav a {
@@ -290,4 +294,23 @@ figure img {
         flex-direction: row;
         padding: 5% 0;
     }
+}
+
+/******WORK WITH ME PAGE******/
+#headline {
+    text-align: center;
+}
+
+#options {
+    background: url(../img/packages-image.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.package {
+    background: white;
+    padding: 3%;
 }
