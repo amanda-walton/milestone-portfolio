@@ -1,0 +1,293 @@
+body {
+    color: #095156;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body h3  {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+/******NAV******/
+nav {
+    color: #095156;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 5%;
+}
+
+nav a {
+    color: #095156;
+    text-decoration: none;
+}
+
+/******HERO******/
+#hero {
+    background: url(../img/hero-image.png) center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#hero h1 {
+    color: #bdbf09;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    text-align: center;
+    width: 75%;
+}
+
+#hero h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    text-align: center;
+    width: 75%;
+}
+
+@media only screen and (min-width:768px) {
+    #hero h1 {
+        font-size: 3em;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    #hero {
+        padding-top: 20%;
+    }
+
+    #hero h1 {
+        font-size: 3.75em;
+    }
+
+    #hero h2 {
+        font-size: 3em;
+    }
+
+}
+
+/*****PORTFOLIO******/
+#portfolio h3 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#portfolio {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding-bottom: 15%;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+}
+
+.project-description h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0; 
+}
+
+.project-description h5 {
+    font-size: 1.2em;
+    margin: 2% 0 4% 0;
+}
+
+.project-description p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+@media only screen and (min-width:768px) {
+    figure img {
+        width: 80%;
+    }
+
+    .project-description h5 {
+        font-size: 1.3em;
+    }
+    
+    .project-description p {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    #portfolio h3 {
+        padding-bottom: 50px;
+    }
+    
+    .project {
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        padding-bottom: 8%;
+    }
+
+    .project-description {
+        width: 60%;
+    }
+
+    .figure img {
+        height: 50px;
+    }
+}
+
+/******ABOUT ME******/
+#about {
+    background: #097e8b;
+    color: #ffffff;
+    text-align: center;
+}
+
+#about h3 {
+    font-size: 2em;
+    margin: 0;
+    padding: 32px 0;
+    text-align: center;
+}
+
+#photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#photo img {
+    border: 2px solid #095156;
+    height: 20em;
+}
+
+#photo p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+    width: 80%;
+}
+
+@media only screen and (min-width:768px) {
+    #photo p {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    #photo {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding-bottom: 5%;
+    }
+
+    #photo img {
+        height: 30em;
+    }
+
+    #photo p {
+        width: 50%;
+    }
+}
+
+/******CONNECT******/
+#connect {
+    background: #095156;
+    color: #ffffff;
+}
+
+#connect h3 {
+    font-size: 2em;
+    margin: 0;
+    padding: 32px 0;
+    text-align: center;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.third-width {
+    padding: 4% 0;
+    text-align: center;
+    width: 80%;
+}
+
+.third-width h4 {
+    font-size: 1.5em;
+    margin: 0;
+}
+.third-width p {
+    font-size: 1.2em;
+    margin: 0;
+    padding-top: 2%;
+}
+
+#icons {
+    padding-top: 2%;
+}
+
+.fab {
+    color: #bdbf09;
+}
+
+#icons i {
+    padding: 10px;
+}
+
+#copyright {
+    font-size: 1em;
+    padding: 1% 0;
+    text-align: center;
+}
+
+@media only screen and (min-width:768px) {
+    .third-width p {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    #contact {
+        flex-direction: row;
+        padding: 5% 0;
+    }
+}
